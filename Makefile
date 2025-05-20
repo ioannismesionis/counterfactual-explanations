@@ -1,4 +1,4 @@
-.PHONY: setup venv clean install
+.PHONY: setup venv clean install format
 
 # Default target
 all: setup
@@ -18,6 +18,12 @@ install:
 	@echo "Installing requirements..."
 	@. .venv/bin/activate && python3 -m pip install -r requirements.txt
 
+# Format notebooks using black
+format:
+	@echo "Formatting notebooks with black..."
+	@. .venv/bin/activate && nbqa black *.ipynb
+	@echo "Formatting complete!"
+
 # Clean up virtual environment and cache
 clean:
 	@echo "Cleaning up..."
@@ -34,5 +40,6 @@ help:
 	@echo "  setup    - Create virtual environment and install requirements"
 	@echo "  venv     - Create virtual environment only"
 	@echo "  install  - Install requirements only"
+	@echo "  format   - Format notebooks using black"
 	@echo "  clean    - Remove virtual environment and cache files"
 	@echo "  help     - Show this help message" 
