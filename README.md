@@ -1,12 +1,12 @@
-# Counterfactual Explanations for Machine Learning Models
+# 🤖 Counterfactual Explanations for Machine Learning Models
 
 This repository contains an implementation of counterfactual explanations for machine learning models. Counterfactual explanations help understand how a model's predictions would change if the input features were different, providing actionable insights for model interpretability.
 
-## Overview
+## 🎯 Overview
 
 Counterfactual explanations are a powerful tool for understanding machine learning models by answering questions like "What changes would be needed to get a different prediction?" This implementation uses various techniques and libraries to generate and analyze counterfactual explanations.
 
-## Features
+## ✨ Features
 
 - Implementation of counterfactual explanations using DiCE (Diverse Counterfactual Explanations)
 - Support for various ML models (LightGBM, etc.)
@@ -14,9 +14,9 @@ Counterfactual explanations are a powerful tool for understanding machine learni
 - Feature importance analysis using SHAP values
 - Comprehensive notebook with examples and explanations
 
-## Technical Details
+## 🔧 Technical Details
 
-### Counterfactual Generation
+### 🔄 Counterfactual Generation
 The project uses DiCE (Diverse Counterfactual Explanations) to generate counterfactual examples. The process involves:
 
 1. **Model Training**:
@@ -34,7 +34,7 @@ The project uses DiCE (Diverse Counterfactual Explanations) to generate counterf
    - Visualization of counterfactual differences
    - Actionable insights generation
 
-### Key Components
+### 🧩 Key Components
 
 1. **Data Processing**:
    - Feature scaling and normalization
@@ -51,7 +51,7 @@ The project uses DiCE (Diverse Counterfactual Explanations) to generate counterf
    - Diversity measures
    - Feasibility constraints
 
-## Requirements
+## 📋 Requirements
 
 The project requires Python 3.8+ and the following main dependencies:
 - numpy (≥1.26.0)
@@ -65,7 +65,7 @@ The project requires Python 3.8+ and the following main dependencies:
 
 For a complete list of dependencies, see `requirements.txt`.
 
-## Installation
+## 🚀 Installation
 
 1. Clone the repository:
 ```bash
@@ -83,7 +83,7 @@ This will:
 - Install all required dependencies
 - Set up the development environment
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 counterfactual-explanations/
@@ -96,7 +96,7 @@ counterfactual-explanations/
 └── counterfactual_poc.ipynb
 ```
 
-## Usage
+## 📖 Usage
 
 1. Activate the virtual environment:
 ```bash
@@ -115,7 +115,7 @@ The notebook contains detailed examples and explanations of:
 - Feature importance analysis
 - Actionable insights generation
 
-## Development
+## 🛠️ Development
 
 The project uses a Makefile for common development tasks:
 
@@ -124,7 +124,7 @@ The project uses a Makefile for common development tasks:
 - `make venv`: Create only the virtual environment
 - `make install`: Install project dependencies
 
-## Best Practices
+## 💡 Best Practices
 
 1. **Model Interpretability**:
    - Use SHAP values for global feature importance
@@ -142,7 +142,7 @@ The project uses a Makefile for common development tasks:
    - Consider domain constraints
    - Validate counterfactual explanations
 
-## Contributing
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -150,11 +150,11 @@ The project uses a Makefile for common development tasks:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - DiCE (Diverse Counterfactual Explanations) library
 - SHAP (SHapley Additive exPlanations) library
